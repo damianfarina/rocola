@@ -1,2 +1,22 @@
-<h1>Rocola!!!</h1>
-<p>Find me in Xoomcode</p>
+<div class="row">
+  <div class="span6">
+    <%= form_for @tinysong, :url => "", :method => :get, :class => "form-search" do |f| %>
+      <%= f.text_field :keyword, :class => "input-medium search-query" %>
+      <button type="submit" class="btn">Search</button>
+    <% end %>
+    <ul class="unstyled">
+      <% @tinysong.songs.each do |song| %>
+        <li>
+          <b>ID:</b> <%= song.id %><br>
+          <b>Artista:</b> <%= song.artist_name %><br>
+          <b>Album:</b> <%= song.album_name %><br>
+          <b>Título:</b> <%= song.song_name %><br>
+          <hr>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="span6">
+    <h2>Playlist</h2>
+  </div>
+</div>
