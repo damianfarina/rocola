@@ -29,8 +29,11 @@
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <!-- Size should be 57 x 57 pixels -->
     <%= favicon_link_tag 'images/apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+
+    <!-- Javascripts -->
+    <%= javascript_include_tag "application" %>
   </head>
-  <body>
+  <body data-controller="<%= safe_controller_name %>" data-action="<%= safe_action_name %>">
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -59,16 +62,12 @@
           </div>
         </div><!--/row-->
 
+      <!--
       <footer>
         <p>&copy; Rocola 2013</p>
       </footer>
+      -->
 
     </div> <!-- /container -->
-
-    <!-- Javascripts
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "application" %>
-
   </body>
 </html>

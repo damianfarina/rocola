@@ -14,6 +14,9 @@ class PlaylistsController < ApplicationController
   # GET /playlists/1.json
   def show
     @playlist = Playlist.find(params[:id])
+    @grooveshark = Rocola::Grooveshark.new
+    @tinysong = Rocola::Tinysong::Search.new params[:search] || {}
+    @tinysong.search
 
     respond_to do |format|
       format.html # show.html.erb

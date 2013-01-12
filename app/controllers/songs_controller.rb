@@ -13,7 +13,8 @@ class SongsController < ApplicationController
   # GET /songs/1
   # GET /songs/1.json
   def show
-    @song = Song.find(params[:id])
+    g = Rocola::Grooveshark.new
+    @song = g.stream_key_for_song(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
