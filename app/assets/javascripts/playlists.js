@@ -48,6 +48,7 @@ Rocola.playlists.action_show = function() {
   var preparePlaySong = function() {
     setCallbacks();
     $(document).on("click", "a[data-songid]", function(e) {
+      debugger;
       e.preventDefault();
       playSong($(this).data("songid"));
     });
