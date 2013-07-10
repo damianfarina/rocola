@@ -5,13 +5,13 @@
 
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
-  <dd><%= @song.name %></dd>
+  <dd><%= @song["name"] %></dd>
   <dt><strong><%= model_class.human_attribute_name(:artist_name) %>:</strong></dt>
-  <dd><%= @song.artist_name %></dd>
+  <dd><%= @song["artist_name"] %></dd>
   <dt><strong><%= model_class.human_attribute_name(:album_name) %>:</strong></dt>
-  <dd><%= @song.album_name %></dd>
+  <dd><%= @song["album_name"] %></dd>
   <dt><strong><%= model_class.human_attribute_name(:playlist_id) %>:</strong></dt>
-  <dd><%= @song.playlist_id %></dd>
+  <dd><%= @song["playlist_id"] %></dd>
 </dl>
 
 <div class="form-actions">

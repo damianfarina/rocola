@@ -2,3 +2,8 @@ language: ruby
 bundler_args: --without development
 rvm:
   - 1.9.3
+env:
+  - GROOVESHARK_API_KEY=xoomcode
+  - GROOVESHARK_API_SECRET=47db3d9a309409cfaddf8df00e851d3f
+  - GROOVESHARK_SESSION_ID=0f6b3b5be3b6cde8e1ffc2b2b01a3d57
+  - TINYSONG_API_KEY=fa146b448cbbee616e8d35e93c8e0a71
