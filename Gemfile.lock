@@ -61,7 +61,7 @@ GEM
     less-rails (2.2.6)
       actionpack (>= 3.1)
       less (~> 2.2.0)
-    libv8 (3.11.8.4)
+    libv8 (3.11.8.17)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -96,7 +96,7 @@ GEM
     rake (10.0.3)
     rdoc (3.12)
       json (~> 1.4)
-    ref (1.0.2)
+    ref (1.0.5)
     sass (3.2.4)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -110,7 +110,8 @@ GEM
     sqlite3 (1.3.6)
     swfobject-rails (1.1.1)
       rails (~> 3.2)
-    therubyracer (0.11.0)
+    therubyracer (0.11.1)
+      libv8 (~> 3.11.8.7)
       ref
     thor (0.16.0)
     tilt (1.3.3)
@@ -134,12 +135,11 @@ DEPENDENCIES
   debugger
   jquery-rails
   less-rails
-  libv8
   quiet_assets
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   sqlite3
   swfobject-rails
-  therubyracer
+  therubyracer (= 0.11.1)
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
